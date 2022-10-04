@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="@dimen/side_margin"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="انتخاب تاریخ : "
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/date_piker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calendar_icon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginRight="@dimen/side_margin"
+        android:layout_marginBottom="@dimen/layout_distance"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/yesterday"
+            android:layout_width="@dimen/btn_wide"
+            android:layout_height="wrap_content"
+            android:text="دیـروز"
+            android:layout_marginLeft="@dimen/btn_distance"/>
+        <Button
+            android:id="@+id/today"
+            android:layout_width="@dimen/btn_wide"
+            android:layout_height="wrap_content"
+            android:text="امـروز"
+            android:layout_marginLeft="@dimen/btn_distance"/>
+        <Button
+            android:id="@+id/tomorrow"
+            android:layout_width="@dimen/btn_wide"
+            android:layout_height="wrap_content"
+            android:text="فــردا"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تبـــدیـل بــه : "
+        android:textSize="@dimen/normal_font_size"
+        android:textColor="@color/black"
+        android:layout_marginRight="@dimen/side_margin"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginRight="@dimen/side_margin"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/meladi"
+            android:layout_width="@dimen/btn_wide"
+            android:layout_height="wrap_content"
+            android:text="میلادی"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/meladi1"
+            android:layout_width="@dimen/small_edit_text"
+            android:editable="false"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/meladi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginLeft="@dimen/larg_edit_text"
+        android:layout_marginRight="@dimen/side_margin"
+        android:layout_marginBottom="@dimen/layout_distance"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginRight="@dimen/side_margin"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/shamsi"
+            android:layout_width="@dimen/btn_wide"
+            android:layout_height="wrap_content"
+            android:text="شمسی"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/shamsi1"
+            android:layout_width="@dimen/small_edit_text"
+            android:editable="false"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/shamsi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginLeft="@dimen/larg_edit_text"
+        android:layout_marginRight="@dimen/side_margin"
+        android:layout_marginBottom="@dimen/layout_distance"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginRight="@dimen/side_margin"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/qamari"
+            android:layout_width="@dimen/btn_wide"
+            android:layout_height="wrap_content"
+            android:text="قمری"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/qamari1"
+            android:layout_width="@dimen/small_edit_text"
+            android:layout_height="wrap_content"
+            android:editable="false" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/qamari2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginLeft="@dimen/larg_edit_text"
+        android:layout_marginRight="@dimen/side_margin"
+        android:layout_marginBottom="@dimen/layout_distance"/>
+</LinearLayout>
