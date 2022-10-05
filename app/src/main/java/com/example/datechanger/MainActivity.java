@@ -177,23 +177,6 @@ public class MainActivity extends AppCompatActivity {
                     days=days+1;
                 }
 
-//
-//                if(days==31&&months>=1&&months<=6)
-//                {
-//                    Toast.makeText(MainActivity.this,"if(days==31&&months>=1&&months<=6) executed!",Toast.LENGTH_SHORT).show();
-//                    days=1;
-//                    months=months+1;
-//                }
-//                else if(days==30&&months>=7&&months<12){
-//                    days=1;
-//                    months=months+1;
-//                }
-//                else if(days==29&&months==12){
-//                    days=1;
-//                    months=1;
-//                    years=years+1;
-//                }
-//                else if(days==29||days==30||days==31)
                 strDatei=years+"/"+months+"/"+days;
                 in_date.setText(strDatei);
             }
